@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "press start 2p";
+  src: url("fonts/Press_Start_2P\,Roboto/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+body {
+  font-family: "press start 2p", sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(76, 76, 159);
+  text-align: center;
+}
+
+header,
+main {
+  height: 40vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 5px solid white;
+  position: relative;
+}
+
+body > header:nth-child(1) > p:nth-child(2) {
+  position: absolute;
+  top: 2vh;
+  right: 7px;
+}
+
+.number {
+  background-color: gray;
+  font-size: 3em;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.btn {
+  width: 200px;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn.new-game {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  padding-top: 78px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.guess {
+  width: 200px;
+  height: 50px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.message {
+  margin-top: 10px;
+  color: white;
+}
+
+.score {
+  font-weight: bold;
+}
